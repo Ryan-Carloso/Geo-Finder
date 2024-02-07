@@ -104,7 +104,7 @@ export default function App() {
       <View style={styles.container}>
         {!showMap ? (
           <View style={styles.inputContainer}>
-            <Text style={styles.inputxt}>Numero de quem deseja localizar:</Text>  
+            <Text style={styles.inputxt}>Digite numero de telefone para localizar:</Text>  
             <TextInput
               style={styles.input}
               placeholder="Digite um número"
@@ -197,6 +197,8 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     justifyContent: 'center',
+    backgroundColor: "black", 
+    opacity: 10,
   },
    
   buttonTextback: {
@@ -259,7 +261,7 @@ const styles = StyleSheet.create({
     color: "white",
     borderRadius: 25, // Set the borderRadius to half of the height to make it round
     borderWidth: 1,
-    opacity: 0.9
+    opacity: 0.9  
   },
   
   container: {
